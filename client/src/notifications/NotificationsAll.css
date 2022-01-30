@@ -1,0 +1,67 @@
+.notificationsAll {
+    flex: 0.5;
+    overflow-y: scroll;
+    border-right: 1px solid var(--twitter-background);
+    border-left: 1px solid var(--twitter-background);
+    width: fit-content;
+}
+
+.notificationsAll__header {
+    position: sticky;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: white;
+    z-index: 1;
+    padding: 0px 20px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.notificationsAll::-webkit-scrollbar {
+    display: none;
+}
+
+.notificationsAll__body{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.notificationsAll1__button{
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+    height: fit-content;
+    border-bottom: 4px solid var(--twitter-color);
+    width: 100%;
+}
+
+.notificationsAll2__button{
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+    height: fit-content;
+    width: 100%;
+}
+
+.notificationsAll2__button:hover {
+    background-color: var(--twitter-background);
+    border-bottom: 4px solid var(--twitter-background);
+}
+
+.notificationsAll1__button:hover {
+    background-color: var(--twitter-background);
+}
+
+.all__body{
+    width: 100vh;
+}

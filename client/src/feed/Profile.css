@@ -1,0 +1,216 @@
+.profile__header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: white;
+    z-index: 1;
+    border: 1px solid var(--twitter-background);
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.profile__headerDandT{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+.dispNameHeader{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tweetsHeader{
+    font-size: 14px;
+    font-weight: 350;
+}
+
+.profile{
+    flex: 0.5;
+    overflow-y: scroll;
+    border-right: 1px solid var(--twitter-background);
+    border-left: 1px solid var(--twitter-background);
+}
+
+.profile::-webkit-scrollbar {
+    display: none;
+}
+
+.profileBody{
+    display: flex;
+    flex-direction: column;
+}
+
+.upSide{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-height: 300px;
+    position: relative;
+}
+
+.backProfileImage{
+    display: flex;
+    width: 100%;
+}
+
+.downSide{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.avatarAndEdit{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    max-height: fit-content;
+}
+
+.avatarProfile{
+    display: flex;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 300px;
+    border: 1px solid var(--twitter-background);
+    border-width: 3px;
+    position: relative;
+    margin-top: -80px !important;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background-color: var(--twitter-background);
+}
+
+.post__badge {
+    font-size: 14px !important;
+    color: var(--twitter-color) !important;
+}
+
+.editButton{
+    margin-top: 15px;
+    margin-right: 25px;
+    border: 1px solid var(--twitter-background);
+    border-radius: 30px;
+    background-color: white;
+    border-width: 2px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 120px;
+    height: fit-content;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 650;
+}
+
+.editButton:hover{
+    background-color: #e8f5fe;
+    color: var(--twitter-color);
+}
+
+.displayName {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.tagName {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+    color: grey;
+}
+
+.profileStatus {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 450;
+    margin-top: 15px;
+}
+
+.profileCountFollow {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.following {
+    margin-right: 20px;
+}
+
+/*.profile__butBar>button{
+    color: lightgray;
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+}
+
+.profile__butBar>button:hover {
+    background-color: var(--twitter-background);
+}*/
+
+.profile__butBar{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--twitter-background);
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.profile_tapBarButton{
+    color: grey;
+    display: flex;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.activeTabBarButtonClass{
+    color: black;
+    border: none;
+    border-bottom: 2px solid var(--twitter-color);
+    display: flex;
+    background-color: white;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.profile_tapBarButton:focus{
+    border-bottom: 4px solid var(--twitter-color);
+    color: black;
+}
+
+.profile_tapBarButton:hover{
+    background-color: var(--twitter-background);
+}
+
+.profile__ButtonActive {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 4px solid var(--twitter-color);
+    color: black;
+}

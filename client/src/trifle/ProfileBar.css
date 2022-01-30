@@ -1,0 +1,50 @@
+.profileBar{
+    display: flex !important;
+    align-items: center !important;
+    font-size: 10px;
+    border-radius: 30px !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.linkProf{
+    text-decoration: none;
+}
+
+.aliases {
+    margin-left: 10px;
+    display: inline-grid !important;
+    justify-items: flex-start !important;
+}
+
+.profileName {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.profileTag{
+    font-size: 15px;
+    color: #6E767D;
+}
+
+.threeEntry {
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 55px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.profileBar:hover{
+     background-color: #e8f5fe;
+     border-radius: 30px;
+     color: var(--twitter-color);
+     transition: color 100ms ease-out;
+ }

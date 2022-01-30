@@ -1,0 +1,13 @@
+.facts{
+    width: fit-content;
+    height: fit-content;
+}
+
+.facts>h1{
+    color: black;
+}
+
+.facts>text{
+    font-size: 20px;
+}
+

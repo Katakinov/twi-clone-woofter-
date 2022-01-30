@@ -1,0 +1,11 @@
+.footer{
+    --donor-color: #FFD3D3;
+    background-color: var(--donor-color);
+    flex: 0.1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: red;
+    font-size: 12px;
+    width: 100vw;
+}

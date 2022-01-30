@@ -1,0 +1,58 @@
+.widgets__actual{
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.widgets__actual:hover{
+    background-color: #e8f5fe;
+    transition: color 100ms ease-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.widgets__actualHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6E767D;
+    padding-top: 10px;
+}
+
+.threeEntry{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.threeEntry:hover{
+    justify-content: center;
+    width: fit-content;
+    background-color: var(--twitter-background);
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.widgets__actualBody{
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.widgets__actualFooter{
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #6E767D;
+    margin-top: 5px;
+}

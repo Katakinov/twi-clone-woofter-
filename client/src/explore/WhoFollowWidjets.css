@@ -1,0 +1,31 @@
+.whoFollowWid{
+    flex: 0.25;
+    overflow-y: auto;
+    padding-left: 40px;
+}
+
+.whoFollowWid::-webkit-scrollbar {
+    display: none;
+}
+
+.whoFollowWid__widgetContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-left: 0px;
+    padding-top: 0px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+
+.whoFollowWid__widgetContainer > h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.whoFollowWid__header{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

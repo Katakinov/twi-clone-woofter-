@@ -1,0 +1,11 @@
+.petsIconMini > .MuiSvgIcon-root {
+    padding-left: 0px;
+    margin-left: 0px;
+    color: var(--twitter-color);
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.petsIconMini--active {
+    color: var(--twitter-color);
+}

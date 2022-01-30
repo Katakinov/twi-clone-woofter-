@@ -1,0 +1,85 @@
+.explore{
+    flex: 0.5;
+    overflow-y: scroll;
+    border-right: 1px solid var(--twitter-background);
+    border-left: 1px solid var(--twitter-background);
+}
+
+.explore::-webkit-scrollbar {
+    display: none;
+}
+
+.upperExplore {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--twitter-background);
+}
+
+.widgetsExplore__input {
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.widgetsExplore__input > input {
+    background-color: var(--twitter-background);
+    border: none;
+    width: 100%;
+}
+
+.widgetsExplore__searchIcon {
+    color: gray;
+}
+
+.settingsIcon {
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    padding: 10px;
+    align-items: center;
+}
+
+.settingsIcon:hover {
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    background-color: var(--twitter-background);
+    border-radius: 50px;
+    color: var(--twitter-color);
+}
+
+.settingsButton {
+    text-decoration: none;
+    color: black;
+}
+
+.moreInfo {
+    text-decoration: none;
+    color: var(--twitter-color);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.exploreWid {
+    padding-bottom: 20px;
+}
+
+.exploreWid>h2 {
+    margin-left: 10px;
+}
+
+.explorePost {
+    border-top: 2px solid var(--twitter-background);
+}
+
+.postButton {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,7 @@
+.app {
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    min-width: fit-content;
+    position: fixed;
+}

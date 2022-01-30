@@ -1,0 +1,115 @@
+.authPages{
+    display: flex;
+    --donor-color: #FFD3D3;
+    background-color: var(--twitter-color);
+    color: var();
+    flex: 1;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.containerForms{
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+    height: 25rem;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: white;
+    align-items: center;
+}
+
+.donorIconAuth{
+    height: 20vh;
+    margin-left: 20%;
+    margin-right: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--twitter-color);
+}
+
+.formInput>input{
+    margin-bottom: 5%;
+    font-size: 24px;
+}
+
+.formsUnder{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2%;
+    border-bottom: 2px solid black;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.confirmButton{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--twitter-color);
+    text-decoration: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: none;
+    margin-right: 5%;
+}
+
+.confirmButton1{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--twitter-color);
+    text-decoration: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: none;
+}
+
+.confirmButton:hover{
+    background-color: var(--donor-color);
+    color: black;
+}
+
+.confirmButton1:hover{
+    background-color: var(--donor-color);
+    color: black;
+}
