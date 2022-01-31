@@ -49,9 +49,12 @@ class Profile extends Component{
             //console.log(this.state.poster)
         })
         const userN = JSON.parse(localStorage.getItem('userData'))
-        console.log(userN.userName)
-        const tuk = userN.userName
-        this.setState({ user: tuk })
+        //console.log(userN.userName)
+        const tuk = userN.userId
+        console.log(tuk + " = tuk")
+        //this.setState({ user: tuk })
+
+
 
         //this.setState({ user: userN.userNmae})
 
@@ -72,11 +75,11 @@ class Profile extends Component{
             req.user = third
         });*/
 
-        /*axios.get('/find/current', {
-            params: { userId: third },
-        }).then((response) => {
-            console.log(response)
-        })*/
+        axios.get(`/find/current/${tuk}`).then((res) => {
+            const currentUser = res.data
+            console.log(res.data + " = res.data")
+            this.setState({ user: currentUser.name });
+        })
 
         /*axios.get('/find/current').then(res => {
             const user = res.data;

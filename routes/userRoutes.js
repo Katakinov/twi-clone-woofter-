@@ -31,23 +31,28 @@ UserRouter.get('/email/:email', (req, res) => {
     })
 })
 
-/*UserRouter.get('/current', auth, async (req, res) => {
-    //const email = req.body 
-    try {
-        const currentId = req.user.userId
-        const currentUser = await User.findById( req.user.userId )
-        //res.json(currentUser)
-        //res.send("Чтото " + currentUser)
-        res.send("hello")
-        console.log("hi")
-        console.log("Hello " + currentId)
+UserRouter.get('/current/:id', async (req, res) => {
+
+    User.findOne({ _id: req.params.id }, (error, user) => {
+        if (error) { res.send('Пользователь не найден') }
+
+        else {
+            console.log(user);
+            res.json(user)
+        }
+    })
+
+    /*try {
+        //const currentUser = await User.findOne({_id: req.params.id})
+        await User.findOne({_id: req.params.id}, (error, user))
+        res.json(user)
     } catch (e) {
         res.status(500).json({message: "Что то пошло не так"})    
-    }
-})*/
+    }*/
+})
 
 //TODO: Написать запрос на получение всех пользователей
-UserRouter.get('/current',
+/*UserRouter.get('/current',
     async (req, res) => {
         try {
             //userrr = localStorage.getItem('id')
@@ -66,6 +71,6 @@ UserRouter.get('/current',
             console.log(e)
             res.send({message: "server error"})
         }
-})
+})*/
 
 module.exports = UserRouter;
